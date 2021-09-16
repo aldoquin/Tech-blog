@@ -6,8 +6,7 @@
     "node": "14.x"
   },
   "scripts": {
-    "start": "node backend/server",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix && npm run build --prefix"
+    "start": "node backend/server"
   },
   "repository": {
     "type": "git",
