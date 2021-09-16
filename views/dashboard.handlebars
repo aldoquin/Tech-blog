@@ -1,0 +1,28 @@
+<div class="blog-form">
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">blog post</label>
+  <input type="email" class="form-control" id="titleForm" placeholder="title">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label"> textarea</label>
+  <textarea class="form-control" id="comment" rows="3"></textarea>
+</div>
+     <div class="form-group">
+        <button  id="submitPost" type="button">post</button>
+      </div>    
+</div>
+
+
+<div class="blog-post" style='display:flex' ></div>
+ {{#each dbC as |database|}}
+<div class='contact-link'>
+<h1>{{database.title}}</h1>
+<h2>{{database.description}}</h2>
+</div>
+ {{/each}}
+  
+</div>
+
+
+  {{!-- {{>comment}} --}}
+<script src="/comment.js"></script>
