@@ -44,6 +44,10 @@ app.get('/',(req,res)=>{
   res.render('welcome')
 })
 
+app.get('/hi',(req,res)=>{
+res.send('hi')
+})
+
 
 connectDB();
 app.listen(port,()=>{
