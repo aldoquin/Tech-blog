@@ -33,7 +33,8 @@ app.get('/dashboard',async(req,res)=>{
   try {
     const dbC = await Comment.find().lean();
     console.log(dbC);
-    res.render('dashboard',{dbC});
+    // res.render('dashboard',{dbC});
+   res.send(dbc)
   } catch (error) {
     console.log(error);
   }
